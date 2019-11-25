@@ -10,6 +10,7 @@ class Cat
     @name.freeze
     @owner = owner
     @mood = mood
+    @@all << self
   end
   
   def owner=(owner)
@@ -20,6 +21,8 @@ class Cat
     @mood = mood
   end
   
-  
+  def self.all
+    @@all 
+  end
   
 end
