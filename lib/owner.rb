@@ -50,5 +50,14 @@ class Owner
     owners_dogs
   end
   
+  def buy_cat(name)
+    cat = Cat.new(name)
+    cat.owner = self
+  end
+  
+  
+  
+  
+  
   
 end
