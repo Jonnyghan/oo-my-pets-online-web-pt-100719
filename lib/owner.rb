@@ -51,7 +51,7 @@ class Owner
   end
   
   def buy_cat(name, owner, mood= "nervous")
-    cat = Cat.new(name, self, mood)
+    cat = Cat.new(name, owner, mood)
     
   end
   
