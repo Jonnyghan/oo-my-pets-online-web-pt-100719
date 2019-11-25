@@ -39,4 +39,16 @@ class Owner
     end
     owners_cats
   end
+  
+  def cats 
+    owners_dogs = []
+    Dog.all.collect do 
+      |dog| if dog.owner == self
+      owners_cats << dog
+      end
+    end
+    owners_dog
+  end
+  
+  
 end
