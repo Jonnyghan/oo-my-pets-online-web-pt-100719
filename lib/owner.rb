@@ -77,7 +77,9 @@ class Owner
     all_pets = []
     all_pets << self.dogs
     all_pets << self.cats
-binding.pry    
+    all_pets.each do |pet|
+      pet.mood = "nervous"
+    end
   end
   
   
