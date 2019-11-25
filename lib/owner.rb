@@ -40,7 +40,7 @@ class Owner
     owners_cats
   end
   
-  def cats 
+  def dogs 
     owners_dogs = []
     Dog.all.collect do 
       |dog| if dog.owner == self
