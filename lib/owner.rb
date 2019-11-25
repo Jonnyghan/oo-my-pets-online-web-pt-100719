@@ -35,7 +35,8 @@ class Owner
     Cat.all.collect do 
       |cat| if cat.owner == self
       owners_cats << cat
+      end
     end
+    owners_cats
   end
-end
 end
