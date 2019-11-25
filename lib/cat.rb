@@ -16,7 +16,9 @@ class Cat
     @owner = owner
   end
   
-  
+  def mood=(mood)
+    @mood = mood
+  end
   
   
   
