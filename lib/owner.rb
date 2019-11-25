@@ -75,11 +75,10 @@ class Owner
   
   def sell_pets
     all_pets = []
-    all_pets << self.dogs
-    all_pets << self.cats
-    all_pets.each do |pet|
-      pet.mood = "nervous"
-    end
+    Dog.all.collect do |dog|
+      if dog.owner == self
+        
+    
   end
   
   
