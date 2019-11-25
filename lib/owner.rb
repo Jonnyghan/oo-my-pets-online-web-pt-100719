@@ -4,6 +4,8 @@ class Owner
   
   @@all = []
   
+  @all_pets =[]
+  
   def initialize(name)
     @name = name
     #@species = species
