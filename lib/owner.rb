@@ -77,9 +77,20 @@ class Owner
     all_pets = []
     Dog.all.collect do |dog|
       if dog.owner == self
-        
-    
+        all_pets << dog
+      end
+    end
+    Cat.all.collect do |cat|
+      if cat.owner == self
+        all_pets << cat 
+      end
+    end
+    all_pets.each do |pet|
+      pet.mood = "nervous"
+    end
   end
+    
+  
   
   
   
