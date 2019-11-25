@@ -44,7 +44,7 @@ class Owner
     owners_dogs = []
     Dog.all.collect do 
       |dog| if dog.owner == self
-      owners_cats << dog
+      owners_dogs << dog
       end
     end
     owners_dog
