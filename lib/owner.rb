@@ -39,6 +39,7 @@ class Owner
       owners_cats << cat
       end
     end
+    @all_pets << owners_cats
     owners_cats
   end
   
@@ -49,6 +50,7 @@ class Owner
       owners_dogs << dog
       end
     end
+    @all_pets << owners_dogs
     owners_dogs
   end
   
