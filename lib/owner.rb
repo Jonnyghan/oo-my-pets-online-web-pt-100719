@@ -1,11 +1,11 @@
+require 'pry'
 class Owner
   attr_accessor :pets 
   attr_reader :name, :species
   
   @@all = []
   
-  @all_pets =[]
-  
+
   def initialize(name)
     @name = name
     #@species = species
@@ -39,7 +39,6 @@ class Owner
       owners_cats << cat
       end
     end
-    @all_pets << owners_cats
     owners_cats
   end
   
@@ -50,7 +49,7 @@ class Owner
       owners_dogs << dog
       end
     end
-    @all_pets << owners_dogs
+   
     owners_dogs
   end
   
@@ -75,7 +74,10 @@ class Owner
   end
   
   def sell_pets
-    
+    all_pets = []
+    all_pets << owner.dogs
+    all_pets << owner.cats
+binding.pry    
   end
   
   
