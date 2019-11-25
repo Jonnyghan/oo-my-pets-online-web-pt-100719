@@ -29,4 +29,13 @@ class Owner
   def self.reset_all
     @@all.clear
   end
+  
+  def cats 
+    owners_cats = []
+    Cat.all.collect do 
+      |cat| if cat.owner == self
+      owners_cats << cat
+    end
+  end
+end
 end
