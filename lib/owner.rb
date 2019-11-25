@@ -47,7 +47,7 @@ class Owner
       owners_dogs << dog
       end
     end
-    owners_dog
+    owners_dogs
   end
   
   
