@@ -1,13 +1,13 @@
-require 'values'
+
 class Cat
-  attr_accessor :name
+  attr_accessor 
   attr_reader :owner
   
   @@all =[]
   
   def initialize(name,owner)
     @name = name
-    
+    @name.freeze
     @owner = owner
   end
   
@@ -15,9 +15,6 @@ class Cat
     @owner = owner
   end
   
-  def name(name)
-    @name
-  end
   
   
   
